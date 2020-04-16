@@ -113,7 +113,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='comment detail'></td>
 </tr>
 <tr class='even'>
- <td class='detail'>username</td>
+ <td class='indexedColumn' title='Indexed'>username</td>
  <td class='detail'>varchar</td>
  <td class='detail' align='right'>2147483647</td>
  <td class='detail' align='center'></td>
@@ -135,7 +135,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='comment detail'></td>
 </tr>
 <tr class='even'>
- <td class='detail'>email</td>
+ <td class='indexedColumn' title='Indexed'>email</td>
  <td class='detail'>varchar</td>
  <td class='detail' align='right'>2147483647</td>
  <td class='detail' align='center'></td>
@@ -146,7 +146,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='comment detail'></td>
 </tr>
 <tr class='odd'>
- <td class='detail'>salt</td>
+ <td class='detail'>passwd</td>
  <td class='detail'>varchar</td>
  <td class='detail' align='right'>2147483647</td>
  <td class='detail' align='center'></td>
@@ -157,7 +157,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
  <td class='comment detail'></td>
 </tr>
 </table>
-<p title='5 columns'>Table contained 4 rows at Thu Mar 26 19:55 MDT 2020<p/>
+<p title='5 columns'>Table contained 102 rows at Mon Mar 30 11:34 MDT 2020<p/>
 </td></tr></table>
 <div class='indent'>
 <b>Indexes:</b>
@@ -176,6 +176,18 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
   <td class='detail'>Primary key</td>
   <td class='detail' style='text-align:left;'><span title='Ascending'>Asc</span></td>
   <td class='constraint' style='text-align:left;'>users_pkey</td>
+ </tr>
+ <tr>
+  <td class='indexedColumn'>email</td>
+  <td class='detail'>Must be unique</td>
+  <td class='detail' style='text-align:left;'><span title='Ascending'>Asc</span></td>
+  <td class='constraint' style='text-align:left;'>users_email_key</td>
+ </tr>
+ <tr>
+  <td class='indexedColumn'>username</td>
+  <td class='detail'>Must be unique</td>
+  <td class='detail' style='text-align:left;'><span title='Ascending'>Asc</span></td>
+  <td class='constraint' style='text-align:left;'>users_username_key</td>
  </tr>
 </table>
 </div>
